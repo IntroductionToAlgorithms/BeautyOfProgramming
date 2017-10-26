@@ -3,7 +3,7 @@ package com.guangoon.chapter1;
 /**
  * Created by guangoon on 10/25/17.
  */
-public class Solution1_4 {
+public class Solution1_2 {
     static final int HALF_BIT_LENGTH = 4;
     static final int FULLMASK = 255;
     static final int LMASK = (FULLMASK << HALF_BIT_LENGTH);
@@ -45,8 +45,17 @@ public class Solution1_4 {
         }
     }
 
+    public static void displaySolution3(){
+        int i = 81;
+        while(i-- > 0){
+            if(i / 9 % 3 != i % 9 % 3){
+                System.out.println("A = " + (i / 9  + 1) + ",B = " + (i % 9  + 1));
+            }
+        }
+    }
+
 
     public static void main(String[] args){
-        displaySolution1();
+        displaySolution3();
     }
 }
